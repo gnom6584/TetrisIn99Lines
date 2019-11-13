@@ -85,7 +85,6 @@ int main() {
 					}
 				}
 			}
-			lastFrame = clock();
 			draw(currentShape[0], x, y, currentShape, lines);
 			for (int i = height - 1; i >= 0; i--) {
 				std::string longstr = std::string(width * 2, ' ');
@@ -94,6 +93,7 @@ int main() {
 				}
 				std::cout << longstr << std::endl;
 			}
+			lastFrame = clock();
 		}
 	}
 }
